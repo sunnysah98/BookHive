@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BookHive – Library Management System</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+
+<!--
+  Project : BookHive – Library Management System
+  Author  : [Sunny Kumar Sah]
+  GitHub  : https://github.com/sunnysah98
+  Year    : 2026
+  Warning : Unauthorized copying or reuse of this
+            code is strictly prohibited without
+            written permission from the author.
+-->
+
+
+<!-- ── NAVBAR ── -->
+<nav>
+  <a href="#" class="logo">
+    <div class="logo-icon">📚</div>
+    <div class="logo-text">Book<span>Hive</span></div>
+  </a>
+  <div class="nav-links">
+    <a href="#features">Features</a>
+    <a href="#catalog">Catalog</a>
+    <a href="#categories">Categories</a>
+    <a href="#notices">Notices</a>
+    <a href="#" class="nav-btn">Sign In</a>
+  </div>
+</nav>
+
+<!-- ── HERO ── -->
+<div class="hero">
+  <div class="hero-badge">📖 Open Access · Digital Library System</div>
+  <h1>Your Gateway to<br/><em>Knowledge & Books</em></h1>
+  <p>Explore thousands of books, journals, and digital resources. Manage memberships, issue returns, and discover new reads — all in one place.</p>
+  <div class="hero-cta">
+    <a href="#" class="btn-primary">Browse Catalog</a>
+    <a href="#" class="btn-secondary">Member Login</a>
+  </div>
+
+  <div class="search-wrap">
+    <div class="search-box">
+      <input type="text" placeholder="Search by title, author, ISBN, or subject…"/>
+      <select>
+        <option>All</option>
+        <option>Books</option>
+        <option>Journals</option>
+        <option>E-Books</option>
+        <option>Theses</option>
+      </select>
+      <button>Search</button>
+    </div>
+    <p style="margin-top:0.6rem;font-size:0.78rem;color:var(--muted);text-align:right;">
+      Press <kbd style="background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.15);border-radius:4px;padding:0.1rem 0.45rem;">⁄</kbd> to focus search
+    </p>
+  </div>
+</div>
+
+<!-- ── STATS ── -->
+<div class="stats">
+  <div class="stat">
+    <div class="stat-num">1,24,000+</div>
+    <div class="stat-label">Total Books</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">8,500+</div>
+    <div class="stat-label">Registered Members</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">340+</div>
+    <div class="stat-label">Journals & Periodicals</div>
+  </div>
+  <div class="stat">
+    <div class="stat-num">25+</div>
+    <div class="stat-label">Subject Categories</div>
+  </div>
+</div>
+
+<!-- ── FEATURES ── -->
+<section id="features">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Why BookHive</div>
+      <h2>Everything Your Library Needs</h2>
+      <p>A complete system for librarians and readers alike — built for modern institutions.</p>
+    </div>
+    <div class="features-grid">
+      <div class="feature-card fade-up">
+        <div class="feature-icon" style="background:rgba(232,184,75,0.12)">📦</div>
+        <h3>Book Issue & Return</h3>
+        <p>Streamlined circulation system with barcode scanning, due date tracking, and automated fine calculation for overdue books.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon" style="background:rgba(45,212,191,0.12)">🔍</div>
+        <h3>Smart Catalog Search</h3>
+        <p>Search across titles, authors, ISBN, subjects, and keywords with advanced filters and instant suggestions.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon" style="background:rgba(99,102,241,0.15)">👤</div>
+        <h3>Member Management</h3>
+        <p>Register members, manage ID cards, track borrow history, and send renewal reminders via email or SMS.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon" style="background:rgba(239,68,68,0.12)">📊</div>
+        <h3>Reports & Analytics</h3>
+        <p>Generate detailed reports on circulation, inventory, popular books, and member activity with visual dashboards.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon" style="background:rgba(34,197,94,0.12)">🔔</div>
+        <h3>Notices & Alerts</h3>
+        <p>Publish library announcements, new arrival alerts, and holiday schedules — notify members in real time.</p>
+      </div>
+      <div class="feature-card fade-up">
+        <div class="feature-icon" style="background:rgba(251,191,36,0.12)">📱</div>
+        <h3>Mobile Friendly</h3>
+        <p>Fully responsive interface accessible from any device — members can search, reserve, and check status on the go.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ── CATEGORIES ── -->
+<section id="categories" style="background:var(--surface); padding: 4rem 2rem;">
+  <div class="container">
+    <div class="section-header fade-up">
+      <div class="section-tag">Browse By Subject</div>
+      <h2>Explore Categories</h2>
+    </div>
+    <div class="categories-grid">
+      <a href="#" class="cat-card"><span>🔬</span><span>Science</span></a>
+      <a href="#" class="cat-card"><span>🧮</span><span>Mathematics</span></a>
+      <a href="#" class="cat-card"><span>💻</span><span>Technology</span></a>
+      <a href="#" class="cat-card"><span>📜</span><span>History</span></a>
+      <a href="#" class="cat-card"><span>🏛️</span><span>Philosophy</span></a>
+      <a href="#" class="cat-card"><span>🎭</span><span>Literature</span></a>
+      <a href="#" class="cat-card"><span>⚖️</span><span>Law</span></a>
+      <a href="#" class="cat-card"><span>💊</span><span>Medicine</span></a>
+      <a href="#" class="cat-card"><span>🌍</span><span>Geography</span></a>
+      <a href="#" class="cat-card"><span>🎨</span><span>Arts</span></a>
+      <a href="#" class="cat-card"><span>💼</span><span>Commerce</span></a>
+      <a href="#" class="cat-card"><span>🧠</span><span>Psychology</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ── RECENT BOOKS + NOTICES ── -->
+<section id="catalog">
+  <div class="container">
+    <div class="two-col">
+
+      <!-- Recent Books -->
+      <div class="fade-up">
+        <div class="section-tag">New Arrivals</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin:0.5rem 0 1.5rem">Recently Added Books</h2>
+        <div class="books-grid">
+          <div class="book-card">
+            <div class="book-cover" style="background:linear-gradient(135deg,#1a2e4a,#0d1b2e)">📗</div>
+            <div class="book-info">
+              <h4>Data Structures & Algorithms</h4>
+              <p>Cormen et al.</p>
+              <span class="book-tag">Computer Science</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover" style="background:linear-gradient(135deg,#2a1a0e,#4a2c0a)">📙</div>
+            <div class="book-info">
+              <h4>Indian History: A Concise Overview</h4>
+              <p>Bipan Chandra</p>
+              <span class="book-tag">History</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover" style="background:linear-gradient(135deg,#0e2a1a,#0a4a2c)">📘</div>
+            <div class="book-info">
+              <h4>Principles of Economics</h4>
+              <p>N. Gregory Mankiw</p>
+              <span class="book-tag">Economics</span>
+            </div>
+          </div>
+          <div class="book-card">
+            <div class="book-cover" style="background:linear-gradient(135deg,#2a0e1a,#4a0a2c)">📕</div>
+            <div class="book-info">
+              <h4>Organic Chemistry</h4>
+              <p>Morrison & Boyd</p>
+              <span class="book-tag">Science</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Notices -->
+      <div id="notices" class="fade-up">
+        <div class="section-tag">Updates</div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:1.8rem;margin:0.5rem 0 1.5rem">Notices & Announcements</h2>
+        <div class="notices">
+          <div class="notice-header">
+            <h3>Library Bulletin</h3>
+            <a href="#">View all →</a>
+          </div>
+          <div class="notice-item">
+            <div class="notice-dot"></div>
+            <div>
+              <p>Library will remain closed on February 26th for annual stock verification. Online catalog will be accessible.</p>
+              <time>Feb 19, 2026</time>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="notice-dot"></div>
+            <div>
+              <p>New batch of 350+ engineering and science books has been cataloged and is available for borrowing.</p>
+              <time>Feb 15, 2026</time>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="notice-dot"></div>
+            <div>
+              <p>Membership renewal for 2026–27 session is now open. Last date for renewal is March 31, 2026.</p>
+              <time>Feb 10, 2026</time>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="notice-dot"></div>
+            <div>
+              <p>E-Library portal updated with 1,200+ new e-books across STEM and humanities disciplines.</p>
+              <time>Feb 5, 2026</time>
+            </div>
+          </div>
+          <div class="notice-item">
+            <div class="notice-dot" style="background:var(--teal)"></div>
+            <div>
+              <p>Reading Week starts February 22. Special events, book displays and author talks planned throughout the week.</p>
+              <time>Jan 28, 2026</time>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ── FOOTER ── -->
+<footer>
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <a href="#" class="logo" style="margin-bottom:0.5rem;display:inline-flex">
+        <div class="logo-icon" style="width:36px;height:36px;font-size:1.1rem">📚</div>
+        <div class="logo-text" style="font-size:1.2rem">Book<span>Hive</span></div>
+      </a>
+      <p>A modern library management system built to empower institutions and connect readers with knowledge.</p>
+    </div>
+    <div>
+      <h4>Quick Links</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">Catalog</a></li>
+        <li><a href="#">My Account</a></li>
+        <li><a href="#">Book Issue</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Resources</h4>
+      <ul>
+        <li><a href="#">E-Books</a></li>
+        <li><a href="#">Journals</a></li>
+        <li><a href="#">Theses</a></li>
+        <li><a href="#">Reports</a></li>
+      </ul>
+    </div>
+    <div>
+      <h4>Help</h4>
+      <ul>
+        <li><a href="#">Contact Us</a></li>
+        <li><a href="#">FAQs</a></li>
+        <li><a href="#">Library Rules</a></li>
+        <li><a href="#">Feedback</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <span>© 2026 BookHive Library Management System. All rights reserved.</span>
+    <span>Built with care for readers & institutions.</span>
+  </div>
+</footer>
+
+<!-- ══════════════════════════════════════
+     AUTH MODAL OVERLAY
+     ══════════════════════════════════════ -->
+<div class="auth-overlay" id="authOverlay">
+  <div class="auth-card">
+
+    <!-- Close -->
+    <button class="auth-close" id="authClose">✕</button>
+
+    <!-- Logo -->
+    <div class="auth-logo">
+      <div class="auth-logo-icon">📚</div>
+      <div class="auth-logo-text">Book<span>Hive</span></div>
+    </div>
+
+    <!-- Success Screen (shown after submit) -->
+    <div class="auth-success" id="authSuccess">
+      <div class="success-icon">🎉</div>
+      <h3 id="successTitle">Welcome aboard!</h3>
+      <p id="successMsg">Your account has been created. Redirecting you to the library…</p>
+    </div>
+
+    <!-- Main Form Wrapper -->
+    <div id="authFormWrap">
+
+      <!-- Tabs: Login / Sign Up -->
+      <div class="auth-tabs">
+        <div class="auth-tab active" data-tab="login">Login</div>
+        <div class="auth-tab" data-tab="signup">Sign Up</div>
+      </div>
+
+      <!-- Method Toggle -->
+      <div class="auth-method-toggle">
+        <button class="method-btn active" data-method="email">✉️ Email</button>
+        <button class="method-btn" data-method="mobile">📱 Mobile</button>
+      </div>
+
+      <!-- ── LOGIN PANEL ── -->
+      <div class="auth-panel active" id="panelLogin">
+
+        <!-- Email Login -->
+        <div id="loginEmail">
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="loginEmailInput" placeholder="you@example.com" autocomplete="email"/>
+            <span class="field-error" id="loginEmailErr">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div class="input-wrap">
+              <input type="password" id="loginPwInput" placeholder="Enter your password" autocomplete="current-password"/>
+              <button class="toggle-pw" data-target="loginPwInput">👁</button>
+            </div>
+            <span class="field-error" id="loginPwErr">Password must be at least 6 characters.</span>
+          </div>
+          <a href="#" class="forgot-link">Forgot password?</a>
+          <button class="auth-submit" id="loginEmailBtn">Login to Library</button>
+        </div>
+
+        <!-- Mobile Login -->
+        <div id="loginMobile" style="display:none">
+          <div class="form-group">
+            <label>Mobile Number</label>
+            <div class="phone-group">
+              <select class="phone-prefix">
+                <option>🇮🇳 +91</option>
+                <option>🇺🇸 +1</option>
+                <option>🇬🇧 +44</option>
+                <option>🇦🇺 +61</option>
+              </select>
+              <input type="tel" id="loginMobileInput" placeholder="xxxxxxxxxx" maxlength="10"/>
+            </div>
+            <span class="field-error" id="loginMobileErr">Enter a valid 10-digit number.</span>
+          </div>
+          <button class="auth-submit" id="loginOtpBtn">Send OTP</button>
+
+          <!-- OTP Box (hidden until OTP sent) -->
+          <div id="loginOtpBox" style="display:none;margin-top:1.25rem">
+            <p class="otp-info">Enter the 6-digit OTP sent to <strong id="loginOtpTarget"></strong></p>
+            <div class="otp-boxes">
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+            </div>
+            <div class="otp-resend">
+              Didn't receive? <button id="loginResendBtn" disabled>Resend (<span id="loginTimer">30</span>s)</button>
+            </div>
+            <button class="auth-submit" id="loginVerifyBtn" style="margin-top:1rem">Verify & Login</button>
+          </div>
+        </div>
+
+        <!-- Social Login -->
+        <div class="auth-divider">or continue with</div>
+        <div class="social-btns">
+          <button class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.2l6.7-6.7C35.8 2.5 30.2 0 24 0 14.6 0 6.6 5.6 2.7 13.7l7.8 6C12.4 13.2 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17z"/><path fill="#FBBC05" d="M10.5 28.3A14.5 14.5 0 0 1 9.5 24c0-1.5.3-2.9.7-4.3l-7.8-6A24 24 0 0 0 0 24c0 3.9.9 7.5 2.7 10.7l7.8-6.4z"/><path fill="#34A853" d="M24 48c6.2 0 11.4-2 15.2-5.5l-7.5-5.8c-2 1.4-4.6 2.2-7.7 2.2-6.2 0-11.5-4.2-13.4-9.8l-7.8 6C6.6 42.4 14.6 48 24 48z"/></svg>
+            Google
+          </button>
+          <button class="social-btn">
+            <svg width="18" height="18" fill="#1877F2" viewBox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.27h3.32l-.53 3.5h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+            Facebook
+          </button>
+        </div>
+      </div>
+
+      <!-- ── SIGN UP PANEL ── -->
+      <div class="auth-panel" id="panelSignup">
+
+        <!-- Email Signup -->
+        <div id="signupEmail">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="signupName" placeholder="Enter Your Name" autocomplete="name"/>
+            <span class="field-error" id="signupNameErr">Please enter your full name.</span>
+          </div>
+          <div class="form-group">
+            <label>Email Address</label>
+            <input type="email" id="signupEmailInput" placeholder="you@example.com" autocomplete="email"/>
+            <span class="field-error" id="signupEmailErr">Please enter a valid email.</span>
+          </div>
+          <div class="form-group">
+            <label>Password</label>
+            <div class="input-wrap">
+              <input type="password" id="signupPwInput" placeholder="Create a strong password"/>
+              <button class="toggle-pw" data-target="signupPwInput">👁</button>
+            </div>
+            <div class="strength-bar">
+              <span id="sb1"></span><span id="sb2"></span>
+              <span id="sb3"></span><span id="sb4"></span>
+            </div>
+            <div class="strength-label" id="strengthLabel"></div>
+            <span class="field-error" id="signupPwErr">Password must be at least 8 characters.</span>
+          </div>
+          <button class="auth-submit" id="signupEmailBtn">Create Account</button>
+          <p class="auth-terms">By signing up you agree to our <a href="#">Terms of Service</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+        <!-- Mobile Signup -->
+        <div id="signupMobile" style="display:none">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="signupMobileName" placeholder="Enter Your Name"/>
+            <span class="field-error" id="signupMobileNameErr">Please enter your full name.</span>
+          </div>
+          <div class="form-group">
+            <label>Mobile Number</label>
+            <div class="phone-group">
+              <select class="phone-prefix">
+                <option>🇮🇳 +91</option>
+                <option>🇺🇸 +1</option>
+                <option>🇬🇧 +44</option>
+                <option>🇦🇺 +61</option>
+              </select>
+              <input type="tel" id="signupMobileInput" placeholder="xxxxxxxxxx" maxlength="10"/>
+            </div>
+            <span class="field-error" id="signupMobileErr">Enter a valid 10-digit number.</span>
+          </div>
+          <button class="auth-submit" id="signupOtpBtn">Send OTP</button>
+
+          <!-- OTP Box -->
+          <div id="signupOtpBox" style="display:none;margin-top:1.25rem">
+            <p class="otp-info">Enter the 6-digit OTP sent to <strong id="signupOtpTarget"></strong></p>
+            <div class="otp-boxes">
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+              <input type="text" maxlength="1" inputmode="numeric"/>
+            </div>
+            <div class="otp-resend">
+              Didn't receive? <button id="signupResendBtn" disabled>Resend (<span id="signupTimer">30</span>s)</button>
+            </div>
+            <button class="auth-submit" id="signupVerifyBtn" style="margin-top:1rem">Verify & Create Account</button>
+          </div>
+          <p class="auth-terms" style="margin-top:1rem">By signing up you agree to our <a href="#">Terms</a> and <a href="#">Privacy Policy</a>.</p>
+        </div>
+
+        <!-- Social Signup -->
+        <div class="auth-divider">or sign up with</div>
+        <div class="social-btns">
+          <button class="social-btn">
+            <svg width="18" height="18" viewBox="0 0 48 48"><path fill="#EA4335" d="M24 9.5c3.5 0 6.6 1.2 9 3.2l6.7-6.7C35.8 2.5 30.2 0 24 0 14.6 0 6.6 5.6 2.7 13.7l7.8 6C12.4 13.2 17.8 9.5 24 9.5z"/><path fill="#4285F4" d="M46.5 24.5c0-1.6-.1-3.1-.4-4.5H24v8.5h12.7c-.6 3-2.3 5.5-4.8 7.2l7.5 5.8c4.4-4.1 7.1-10.1 7.1-17z"/><path fill="#FBBC05" d="M10.5 28.3A14.5 14.5 0 0 1 9.5 24c0-1.5.3-2.9.7-4.3l-7.8-6A24 24 0 0 0 0 24c0 3.9.9 7.5 2.7 10.7l7.8-6.4z"/><path fill="#34A853" d="M24 48c6.2 0 11.4-2 15.2-5.5l-7.5-5.8c-2 1.4-4.6 2.2-7.7 2.2-6.2 0-11.5-4.2-13.4-9.8l-7.8 6C6.6 42.4 14.6 48 24 48z"/></svg>
+            Google
+          </button>
+          <button class="social-btn">
+            <svg width="18" height="18" fill="#1877F2" viewBox="0 0 24 24"><path d="M24 12.07C24 5.41 18.63 0 12 0S0 5.41 0 12.07C0 18.1 4.39 23.1 10.13 24v-8.44H7.08v-3.49h3.04V9.41c0-3.02 1.8-4.7 4.54-4.7 1.31 0 2.68.24 2.68.24v2.97h-1.51c-1.49 0-1.95.93-1.95 1.88v2.27h3.32l-.53 3.5h-2.79V24C19.61 23.1 24 18.1 24 12.07z"/></svg>
+            Facebook
+          </button>
+        </div>
+      </div>
+
+    </div><!-- /authFormWrap -->
+  </div><!-- /auth-card -->
+</div><!-- /auth-overlay -->
+
+<script src="main.js"></script>
+<script src="auth.js"></script>
+
+</body>
+</html>
